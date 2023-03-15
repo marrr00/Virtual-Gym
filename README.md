@@ -6,65 +6,22 @@ MERN STACK V-GYM - Software Engineering immersive <a href="https://generalassemb
 </h3>
 
 
+
 ## :computer: MERN Stack Project
 
-## Prerequisites
+### Integrate Backend with Frontend using API
+we create API in the Backend, then we called the API in the frontend 
 
-- Git [Git](https://git-scm.com)
-- Node.js [Node.js v10.16](https://nodejs.org/)
-- Yarn [Yarn v1.13](https://yarnpkg.com/)
-- Google Chrome Browser [Google](https://www.google.pt/intl/pt-PT/chrome/?brand=CHBD&gclid=CjwKCAiAxMLvBRBNEiwAKhr-nMvKg5nZhwHd__xLE-Mume31jYijN5WLG991vsf4owDGK4VNHWtrEhoCNRgQAvD_BwE&gclsrc=aw.ds)
-- React 
-- Express.js
--MongoDB
+### Example of creating and calling the API :
+### Creating API in the backend 
+ open  route/user.route.js file 
+ find line number 7 
+ $ // this code create Post API to signup new user 
+ $ // ** note: user data stored in the database schema located in /models/user.model.js
+ $ router.post("/signup", async (req, res)
 
-
-## Getting started
-
-### Setup
-
-1. To start up clone this repository
-
-```bash
- $ git clone https://git.generalassemb.ly/ghadeeralwafi/virtual-gym.git
-```
-
-2. Run the following commands to get it all setup. Firstly in the root directory run `npm install` then `cd frontend` and `npm install`
-
-```bash
-# from root directory of application
-$ npm install
-```
-
-```bash
-# from root directory of application
-$ cd frontend
-$ npm install
-```
-
-3. After all successful installations then run the following in two(2) seperate terminal (bash or cmd) windows.
-
-```bash
-# from root directory of application
-$ npm test
-```
-
-```bash
-# from root directory of application
-$ cd frontend
-$ npm start
-```
-
-## Test using the browser.
-
-http://localhost:3000
-
-
----
-
----
-
-## Go to see our App Live :)
-
-[Click Here](https://virtual-gym-ga.herokuapp.com/)
-
+### Call created API in the frontend
+open  /frontend/src/Components/User/Signup.jsx
+find line number 13
+$ // this code call API signup
+$ .post("http://localhost:5000/api/users/signup", this.state)
