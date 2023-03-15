@@ -18,7 +18,7 @@ we create API in the Backend, then we called the API in the frontend
  find line number 7 
  $ // this code create Post API to signup new user 
  $ // ** note: user data stored in the database schema located in /models/user.model.js
- $ router.post("/signup", async (req, res)
+ $router.post("/signup", async (req, res)
 
 ### Call created API in the frontend
 open  /frontend/src/Components/User/Signup.jsx
